@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    color: #fff;
+    background: crimson;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    margin: 30px 0;
+    transition: 1s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: black;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    padding: 100px 100px;
+}
+
+.section_title {
+    position: relative;
+    color: crimson;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 60px;
+
+}
+
+.section_title::before {
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 50%;
+    width: 140px;
+    height: 4px;
+    background: crimson;
+    transform: translateX(-50%);
+}
+
+.section_title::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: crimson;
+    transform: translateX(-50%);
+}
+
+
+.services .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.title p {
+    width: 80%;
+}
+
+
+.services .content .card {
+    background: #fff;
+    width: 300px;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+
+}
+
+.services .card .services_icon {
+    color: crimson;
+    font-size: 120px;
+    text-align: center;
+    transition: transform .5s ease;
+}
+
+
+.services .card:hover .services_icon {
+    transform: translateY(-30px);
+}
+
+.services .card .info {
+    text-align: center;
+}
+
+.services .card .info h3 {
+    color: crimson;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
